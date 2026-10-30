@@ -2,27 +2,49 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valle Verde</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La 🎃</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <h1>Ruta Valle Verde 🌳<img src="assets/lacalabaza.gif" width="100" height="auto"></h1>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="activate"><a href="#">Home</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <h1><a class="navbar-brand" href="#">La Ruta</a></h1><img src="assets/lacalabaza.gif" alt="La Calabaza" width="50"
+      height="50">
 
-    </a>
-    </nav>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <header>
+      <h1>TECATE</h1>
+      <p>Mapa urbano</p>
+    </header>
+
+    <svg id="mapa" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet">
+    </svg>
+  </main>
+
+  <!-- jQuery (requerido por Bootstrap 4) -->
+  <script src="assets/js/jquery.slim.min.js"></script>
+  <!-- Bootstrap JS Bundle (incluye Popper.js) -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
